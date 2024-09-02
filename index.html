@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas de meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gabriela Souza">
+    <meta name="description" content="Portfólio da desenvolvedora front-end Gabriela C. de Souza">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
+    <title>Warlles Noleto</title>
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" href="./icon.png">
+
+    <!-- Pré-conexão para otimizar carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importação da fonte utilizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header> <!-- Cabeçalho com o menu de navegação -->
+      <nav data-menu="suave">
+        <p><a href="#home">&lsaquo;WN/&rsaquo;</a></p>
+        <button data-menu="button" aria-controls="menu"></button>
+        <ul data-menu="list" id="menu">
+            <a href="#home">
+            <li>Home</li>
+          </a>
+            <a href="#sobre">
+              <li>Sobre</li>
+            </a>
+            <a href="#formacao">
+            <li>Formação</li>
+          </a>
+          <a href="#projetos">
+            <li>Projetos</li>
+          </a>
+          <a href="#contato">
+            <li>Contato</li>
+          </a>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+      <!-- Seção principal com a apresentação -->
+      <section class="principal" id="home" >
+        <div class="principal__left">
+          <h1>Olá, eu sou</h1>
+            <span class="principal__sentence"></span>
+            <span class="principal__input-cursor"></span>
+          <h1>Desenvolvedor Front-End</h1>
+          <!-- Links para LinkedIn e GitHub -->
+          <div class="principal__botao">
+            <a href="https://www.linkedin.com/in/warllesnoleto/" target="_blank">
+              <div class="principal__botao-linkedin">
+                <img src="./assets/linkedin.png" alt="" />
+                <p>LinkedIn</p>
+              </div>
+            </a>
+            <a href="https://github.com/WarllesNoleto" target="_blank">
+              <div class="principal__botao-github">
+                <img src="./assets/github.png" alt="" />
+                <p>Github</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="principal__right">
+          <!-- Imagem representando o desenvolvedor -->
+          <img src="./assets/code.jpeg" alt="Ilustração representando uma desenvolvedora sentada na cadeira mexendo no notebook com ambiente em volta." data-tilt>
+        </div>
+        
+        <div class="scroll" data-menu="suave"><a href="#sobre" > <p> scroll down </p> <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo"></a></div>
+      </section>
+
+      <!-- Seção sobre o desenvolvedor -->
+      <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+        <div class="sobre-mim__foto">
+          <!-- Imagem do desenvolvedor -->
+          <img src="./assets/eu.png" alt="Uma selfie da Gabriela Souza" />
+        </div>
+        <div class="sobre-mim__descricao" >
+          <h1>Sobre mim</h1>
+          <h2>Conceição do Araguaia, Pará</h2>
+          <p>
+            Olá! Meu nome é Warlles Natista Noleto, sou desenvolvedor web apaixonado por tecnologia e inovação. Este site foi criado para apresentar minha trajetória, meus projetos e como você pode entrar em contato comigo. Adoro criar soluções eficientes e criativas para a web, sempre buscando novas maneiras de inovar e melhorar a experiência do usuário.
+            <br>
+            Nos meus momentos livres, gosto de jogar bola, videogame e criar novos sites. Acima de tudo, adoro brincar com minha filhinha de 8 meses, que é minha maior inspiração para ser uma pessoa melhor a cada dia. Navegue à vontade e conheça mais sobre o meu trabalho. Se tiver qualquer dúvida ou quiser discutir um projeto, não hesite em entrar em contato!
+          </p>
+          <div class="sobre-mim__descricao-buttons">
+
+            <a href="./assets/Warlles-Batista-Noleto.pdf" download="">
+              <div class="sobre-mim__descricao-buttons-curriculo">
+                <img src="./assets/download-da-nuvem.png" alt="" />
+                <p>Currículo</p>
+              </div>
+            </a>
+            <a
+              href="mailto: warllesnoletotech@gmail.com?subject=Warlles Noleto, vim pelo seu portfólio! :)"
+              target="_blank"
+            >
+              <div class="sobre-mim__descricao-buttons-email">
+                <img src="./assets/email.png" alt="" />
+                <p>E-mail</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Seção de experiência profissional -->
+      <section class="experiencia" id="Formação" data-anime="js-scroll">
+        <h1>Formação</h1>
+        <div class="experiencia__wrapper">
+          <section class="experiencia__lugares">
+            <ul data-tab="menu">
+              <li>Superior</li>
+              <li>medio</li>
+            </ul>
+          </section>
+          <section class="experiencia__descricao" data-tab="content">
+            <section data-anime="show-right">
+              <h2 style="font-size: 1rem;">Analise e desenvolvimento de sistemas</h2>
+              <span>2023 - Atualmente</span>
+              <p class="experiencia__descricao-local">UNINTER</p>
+              <p>Estou Cursando o que sempre sonhei &#10024</p>
+            </section>
+            <section data-anime="show-right">
+            <h2>E.E.E.F.M Acy de barros</h2>
+            <span>2017 - 2020</span>
+            <p class="experiencia__descricao-local">escola em conceição do araguaia</p>
+            <p style="text-align: justify;">
+             terminei o terceiro ano em EAD por causa da COVID-19.
+            </p>
+          </section>
+        </div>
+      </section>
+      
+      <!-- Seção de projetos -->
+      <section class="projetos" id="projetos" data-anime="js-scroll">
+        <h1>Projetos</h1>
+        <div class="projetos__wrapper">
+          <!-- Cada card representa um projeto -->
+          <section class="projetos__card">
+            <a href="https://warllesnoleto.github.io/PousadaSecreta/" target="_blank">
+            <img src="./assets/projeto1.png" alt="" class="projeto-img"/>
+          </a>
+            <h2>Pousada Secreta</h2>
+            <p>
+              Projeto Desenvolvido a partir do curso de Front-end da DevMedia, colocando em pratica minhas habilidades em HTML5 e CSS3.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://warllesnoleto.github.io/PousadaSecreta/" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="Imagem de raposa representando meu projeto número 1">
+                Visualizar
+              </div>
+            </a>
+          </section>
+          <!-- Demais projetos seguem a mesma estrutura -->
+          <section class="projetos__card">
+            <a href="https://warllesnoleto.github.io/HappyLanches/" target="_blank">
+            <img src="./assets/projeto2.png" alt="Imagem do filme vingadores representando meu projeto número 2" class="projeto-img"/>
+            </a>
+            <h2>Happy Lanches</h2>
+            <p>
+              Projeto Desenvolvido a partir do curso de Front-end da DevMedia, colocando em pratica meinhas habilidades em HTML5 e CSS3.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://warllesnoleto.github.io/HappyLanches/" target="_blank"
+              >
+              <div class="projetos__card-button">
+              <img src="./assets/link.png" alt="">
+              Visualizar
+            </div>
+            </a>
+          </section>
+
+          <section class="projetos__card">
+            <a href="https://warllesnoleto.github.io/LinkBioNeymar/" target="_blank">
+            <img src="./assets/projeto3.png" alt="" class="projeto-img"/>
+            </a>
+            <h2>Link Bio Neymar Junior</h2>
+            <p>
+              Projeto Desenvolvido a partir do curso de Front-end da DevMedia, colocando em pratica minhas habilidades em HTML5 e CSS3.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://warllesnoleto.github.io/LinkBioNeymar/" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="Imagem logo do pokémon representando meu projeto número 3">
+                Visualizar
+              </div>
+            </a>
+          </section>
+
+          <section class="projetos__card">
+            <a href="https://warllesnoleto.github.io/projeto-login/" target="_blank">
+            <img src="./assets/projeto4.png" alt="Imagem logo de folhas de uma planta representando meu projeto número 4" class="projeto-img"/>
+          </a>
+            <h2>Projeto Login</h2>
+            <p>
+              Projeto Desenvolvido a partir do curso de HTML e CSS3 do Curso Em Video, colocando em pratica minhas habilidades em HTML5 e CSS3.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://warllesnoleto.github.io/projeto-login/" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="">
+                Visualizar
+              </div>
+            </a>
+   
+          </section>
+        </div>
+      </section>
+
+      <!--seção de contato-->
+      <section class="contato" id="contato" data-anime="js-scroll">
+        <h1>Contato</h1>
+        <div class="contato__wrapper">
+            <!-- Formulário de contato -->
+            <form action="js/formulario.js" method="post"> 
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <!-- Botão para enviar o formulário -->
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+      <!--Rodapé-->
+      <footer>
+        <p>Desenvolvido com muito <img src="./assets/heart.png" alt="Ícone de coração"> por</p><a href="https://www.linkedin.com/in/warllesnoleto/" target="_blank"><span> Warlles Noleto</span></a>
+      </footer>
+    </main>
+
+    <!--JavaScript do projeto-->
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/modules/vanilla-tilt.min.js"></script>
+    <script src="js/formulario.js"></script>
+  </body>
+</html>
