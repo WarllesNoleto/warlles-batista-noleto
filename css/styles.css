@@ -744,6 +744,7 @@ button[type="submit"]:hover {
 @media (max-width: 880px) {
   .contato {
       padding: 22% 0; /* Ajuste o padding para telas menores */
+      margin-top: 150px;
   }
 
   form {
